@@ -2,13 +2,19 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <p>{{ message }}</p>
+    <counter></counter>
   </div>
 </template>
 
 
+
 <script>
+import Counter from '@/components/Counter'
 export default {
   name: 'app',
+  components: {
+    Counter 
+  },
   data () {
     return {
       message: 'Hola!'
